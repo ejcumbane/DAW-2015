@@ -1,0 +1,20 @@
+Plugin Admin demo
+
+Exemplo com a tabela posts.
+
+Usuários:
+
+login - admin
+senha - admin
+
+login - manager
+senha - manager
+
+Caso tenha problema comente todo o AppController e edite os usuários trocando a senha (coloque as mesmas) e salve.
+
+Pronto, pode rodar.
+
+Sugestões e críticas serão bem vindas:
+
+http://ribafs.org
+
