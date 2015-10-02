@@ -35,6 +35,11 @@ class UsersController extends AdminAppController {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
 	}
+	
+	public function membroscargo() {
+		$this->User->recursive = 0;
+		$this->set('users', $this->Paginator->paginate());
+	}
 
 /**
  * view method

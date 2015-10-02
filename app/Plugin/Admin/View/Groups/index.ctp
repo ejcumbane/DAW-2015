@@ -33,6 +33,8 @@
 	<ul>
 		<?php echo $this->Html->link(__('Novo Grupo'), array('action' => 'add')); ?><br>
 		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add')); ?> 
+		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add')); ?><br> 
+        <?php echo $this->Html->link(__('Pesquisar Membro'), array('controller' => 'users', 'action' => 'membroscargo')); ?> 
+
 	</ul>
 </div>

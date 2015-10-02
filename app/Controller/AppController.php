@@ -33,7 +33,7 @@ class AppController extends Controller {
 				//
 			}else{
 				if($this->AccessControl->access($controller,$action) == false){
-					$this->Session->setFlash(__('Privilégio não cadastrado/Acesso Negado!'));
+					//$this->Session->setFlash(__('Privilégio não cadastrado/Acesso Negado!'));
 				}else{
 					$this->redirect(array('plugin'=>'admin','controller' => 'users', 'action' => 'login'));
 				}

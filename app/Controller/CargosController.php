@@ -25,6 +25,12 @@ class CargosController extends AppController {
 		$this->set('cargos', $this->Paginator->paginate());
 	}
 
+
+	public function membroscargo() {
+		$this->Cargo->recursive = 0;
+		$this->set('cargos', $this->Paginator->paginate());
+	}
+
 /**
  * view method
  *
