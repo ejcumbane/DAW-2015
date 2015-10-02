@@ -36,11 +36,9 @@ $this->Html->css('base', null, array('inline' => false));
     
 	<tr>
 			
-			<th><?php echo $this->Paginator->sort('Nome da Tarefa'); ?></th>
-			<th><?php echo $this->Paginator->sort('Descrição'); ?></th>
 			<th><?php echo $this->Paginator->sort('Nome do Membro'); ?></th>
-			<th><?php echo $this->Paginator->sort('Data de Início'); ?></th>
-			<th><?php echo $this->Paginator->sort('Data Fim'); ?></th>
+			<th><?php echo $this->Paginator->sort('Cargo'); ?></th>
+			
 			<th class="actions"><?php echo __('Acções'); ?></th>
 	</tr>
 	</thead>
@@ -49,12 +47,13 @@ $this->Html->css('base', null, array('inline' => false));
 	<tr>
 		
 		<td><?php echo h($users['User']['name']); ?>&nbsp;</td>
-		<td><?php echo h($users['User']['descricao']); ?>&nbsp;</td>
+		<td><?php echo h($users['User']['group_id']); ?>&nbsp;</td>
+       
 		<td>
 			<?php echo $this->Html->link($users['User']['name'], array('controller' => 'users', 'action' => 'view', $users['User']['id'])); ?>
 		</td>
-		<td><?php echo h($users['User']['dataregisto']); ?>&nbsp;</td>
-		<td><?php echo h($users['User']['prazo']); ?>&nbsp;</td>
+		<td><?php echo h($users['User']['group_id']); ?>&nbsp;</td>
+		
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $users['User']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $users['User']['id'])); ?>
