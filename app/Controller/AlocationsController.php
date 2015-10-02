@@ -50,7 +50,7 @@ class AlocationsController extends AppController {
 					// like "between dates", "greater than", etc
 					if($param_name == "search"){
 						$conditions['OR'] = array(
-							array('Alocation.name LIKE' => '%' . $value . '%'),
+							array('Alocation.cargo LIKE' => '%' . $value . '%'),
     						//sarray('Alocation.description LIKE' => '%' . $value . '%')
 						);
 					} else {

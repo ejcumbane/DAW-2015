@@ -1,26 +1,31 @@
 <div class="alocations index">
 	<h2><?php echo __('Alocações'); ?></h2>
+    
     <div class="filters">
-		<h3>Filters</h3>
-		<?php
-		// The base url is the url where we'll pass the filter parameters
-		$base_url = array('controller' => 'alocations', 'action' => 'index');
-		echo $this->Form->create("Filter",array('url' => $base_url, 'class' => 'filter'));
-		// add a select input for each filter. It's a good idea to add a empty value and set
-		// the default option to that.
-		echo $this->Form->input("group_id", array('label' => 'Membros', 'options' => $groups, 'empty' => '-- Todos os Membros --', 'default' => ''));
-		//echo $this->Form->input("director_id", array('label' => 'Director', 'options' => $directors, 'empty' => '-- All directors --', 'default' => ''));
-		// Add a basic search 
-		echo $this->Form->input("search", array('label' => 'Search', 'placeholder' => "Search..."));
+		<?php $base_url = array('controller' => 'alocations', 'action' => 'index');?>
+	<?php	echo $this->Form->create("Filter",array('url' => $base_url, 'class' => 'filter'));?>
+	
+        
+    <table>
+    	<tr>
+       		<th>
+            	<?php	echo $this->Form->input("group_id", array('label' => false, 'options' => $groups, 'empty' => '-- Selecionar o cargo --', 'default' => ''));?>
+            </th>
+            <th>
+            		<?php	echo $this->Form->input("search", array('label' => false, 'placeholder' => "Search..."));?>
 
-		echo $this->Form->submit("Validar");
-
-		// To reset all the filters we only need to redirect to the base_url
-		echo "<div class='submit actions'>";
-		echo $this->Html->link("Reset",$base_url);
-		echo "</div>";
-		echo $this->Form->end();
-		?>
+            </th>
+            <th>
+            <?php	echo $this->Form->submit("Buscar", array('class'=>'buscar'));?>
+            </th>
+            <th>
+            	<?php	echo $this->Html->link("Limpar",$base_url);?>
+            </th>
+       </tr>
+    </table>
+    <?php	echo $this->Form->end(); ?>
+   
+		
 	</div>
     
     
