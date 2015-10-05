@@ -21,9 +21,9 @@
 		<td><?php echo ($member['Member']['username']); ?>&nbsp;</td>
 		<td><?php echo ($member['Member']['password']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $member['Member']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $member['Member']['id']))); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id']),array('class'=>'btn btn-default')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id']), array('class'=>'btn btn-primary')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $member['Member']['id']),array('class'=>'btn btn-danger'), array('confirm' => __('Are you sure you want to delete # %s?', $member['Member']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
