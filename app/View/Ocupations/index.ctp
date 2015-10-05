@@ -69,7 +69,7 @@ $this->Html->css('base', null, array('inline' => false));
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acções'); ?></h3>
 	<ul>
 		<?php echo $this->Html->link(__('Nova Tarefa'), array('action' => 'add')); ?><br>
 		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index')); ?> <br>

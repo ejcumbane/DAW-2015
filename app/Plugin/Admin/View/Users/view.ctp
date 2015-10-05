@@ -54,7 +54,7 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Name'); ?></th>
-		<th><?php echo __('Descricao'); ?></th>
+		<th><?php echo __('Descrição'); ?></th>
 		<th><?php echo __('User Id'); ?></th>
 		<th><?php echo __('Dataregisto'); ?></th>
 		<th><?php echo __('Prazo'); ?></th>
@@ -64,7 +64,7 @@
 		<tr>
 			<td><?php echo $ocupation['id']; ?></td>
 			<td><?php echo $ocupation['name']; ?></td>
-			<td><?php echo $ocupation['descricao']; ?></td>
+			<td><?php echo $ocupation['descrição']; ?></td>
 			<td><?php echo $ocupation['user_id']; ?></td>
 			<td><?php echo $ocupation['dataregisto']; ?></td>
 			<td><?php echo $ocupation['prazo']; ?></td>

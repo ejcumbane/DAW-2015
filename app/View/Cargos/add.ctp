@@ -1,7 +1,7 @@
 <div class="cargos form">
 <?php echo $this->Form->create('Cargo'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Cargo'); ?></legend>
+		<legend><?php echo __('Adicionar Cargo'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('ocupation_id');

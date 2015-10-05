@@ -34,7 +34,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('group_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
@@ -45,7 +45,7 @@
 	<tbody>
 	<?php foreach ($alocations as $alocation): ?>
 	<tr>
-		<td><?php echo h($alocation['Alocation']['id']); ?>&nbsp;</td>
+		
 		<td><?php echo h($alocation['Alocation']['name']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($alocation['Group']['name'], array('controller' => 'groups', 'action' => 'view', $alocation['Group']['id'])); ?>

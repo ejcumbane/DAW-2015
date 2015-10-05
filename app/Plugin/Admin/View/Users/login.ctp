@@ -5,7 +5,7 @@
 echo $this->Form->create('User');
 ?>
     <fieldset>
-        <legend><?php echo __('Please enter your username and password'); ?></legend>
+        <legend><?php echo __('Por favor insira o nome do usuário e  a senha'); ?></legend>
         <?php echo $this->Form->input('username');
         echo $this->Form->input('password');
     ?>
