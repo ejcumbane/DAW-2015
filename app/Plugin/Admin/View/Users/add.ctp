@@ -16,9 +16,9 @@
 	<ul>
 
 		<?php echo $this->Html->link(__('Listar Membros'), array('action' => 'index'),array('class'=>'btn btn-default')); ?><br>
-		<?php echo $this->Html->link(__('Listar Grupos'), array('controller' => 'groups', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Grupo'), array('controller' => 'groups', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+		<?php echo $this->Html->link(__('Listar Cargos'), array('controller' => 'groups', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
 		<?php echo $this->Html->link(__('Listar Tarefas'), array('controller' => 'ocupations', 'action' => 'index'),array('class'=>'btn btn-default')); ?><br>
-		<?php echo $this->Html->link(__('Nova Tarefa'), array('controller' => 'ocupations', 'action' => 'add'),array('class'=>'btn btn-default')); ?> 
+		<?php //echo $this->Html->link(__('Nova Tarefa'), array('controller' => 'ocupations', 'action' => 'add'),array('class'=>'btn btn-default')); ?>
+         <?php //echo $this->Html->link(__('Novo Grupo'), array('controller' => 'groups', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
 	</ul>
 </div>

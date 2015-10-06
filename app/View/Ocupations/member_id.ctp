@@ -1,5 +1,5 @@
 <div class="ocupations form">
-<?php echo $this->Form->create('Ocupation'); ?>
+<?php echo $this->Form->create('Tarefa'); ?>
 	<fieldset>
 		<legend><?php echo __('Edit Ocupation'); ?></legend>
 	<?php
@@ -16,6 +16,6 @@
 	<ul>
 
 
-		<li><?php echo $this->Html->link(__('Listar Ocupations'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Listar Tarefas'), array('action' => 'index')); ?></li>
 	</ul>
 </div>

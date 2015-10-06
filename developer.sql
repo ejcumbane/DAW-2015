@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2015 at 05:49 PM
+-- Generation Time: Oct 06, 2015 at 01:00 PM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS `alocations` (
 --
 
 INSERT INTO `alocations` (`id`, `name`, `group_id`, `user_id`, `ocupation_id`) VALUES
-(1, 'job 1', 1, 1, 2),
-(2, 'job2', 2, 1, 1),
-(3, 'job3', 3, 2, 4),
-(4, 'job4', 1, 1, 1),
-(5, 'job5', 2, 2, 2);
+(1, 'aloc 1', 1, 1, 2),
+(2, 'aloc 3', 2, 1, 1),
+(3, 'aloc 5', 3, 2, 4),
+(4, 'aloc 2', 1, 1, 1),
+(5, 'aloc 4', 2, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `group_id` int(11) NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -174,7 +174,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `group_id`, `created`, `modified`) VALUES
 (1, 'EstevÃ£o Cumbane', 'estevao', '5900f401a112eefa927904e69ea2b17b937d77e0', 1, '2015-09-18 07:57:06', '2015-09-29 13:56:06'),
-(2, 'Calito Bulo', 'bulo', '5900f401a112eefa927904e69ea2b17b937d77e0', 2, '2015-09-18 07:57:18', '2015-09-29 14:00:28');
+(2, 'Calito Bulo', 'bulo', '5900f401a112eefa927904e69ea2b17b937d77e0', 2, '2015-09-18 07:57:18', '2015-09-29 14:00:28'),
+(3, 'Sumbane', 'sumbane', '5900f401a112eefa927904e69ea2b17b937d77e0', 1, '2015-10-02 18:06:03', '2015-10-02 18:06:03');
 
 --
 -- Indexes for dumped tables
@@ -251,7 +252,7 @@ ALTER TABLE `privileges`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
