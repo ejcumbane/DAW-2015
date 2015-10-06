@@ -76,11 +76,14 @@
 	<ul>
 		<?php echo $this->Html->link(__('Nova Alocação'), array('action' => 'add'),array('class'=>'btn btn-default')); ?><br>
 		<?php echo $this->Html->link(__('Listar Cargos'), array('controller' => 'groups', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Cargo'), array('controller' => 'groups', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
-		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+        <?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
 		<?php echo $this->Html->link(__('Listar Tarefas'), array('controller' => 'ocupations', 'action' => 'index'),array('class'=>'btn btn-default')); ?><br>
-		<?php echo $this->Html->link(__('Nova Tarefa'), array('controller' => 'ocupations', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
-        <?php echo $this->Html->link(__('Buscar Entre Datas'), array('controller' => 'ocupations', 'action' => 'entredata'),array('class'=>'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Buscar Entre Datas'), array('controller' => 'ocupations', 'action' => 'entredata'),array('class'=>'btn btn-default')); ?>
+
+		<?php //echo $this->Html->link(__('Novo Cargo'), array('controller' => 'groups', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+		<?php //echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+		
+		<?php //echo $this->Html->link(__('Nova Tarefa'), array('controller' => 'ocupations', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+        
 	</ul>
 </div>

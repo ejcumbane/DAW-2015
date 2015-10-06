@@ -55,9 +55,9 @@ $this->Html->css('base', null, array('inline' => false));
 		<td><?php echo h($users['User']['group_id']); ?>&nbsp;</td>
 		
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $users['User']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $users['User']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $users['User']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $users['User']['id']))); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $users['User']['id']),array('class'=>'btn btn-default')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $users['User']['id']), array('class'=>'btn btn-primary')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $users['User']['id']),array('class'=>'btn btn-danger'), array('confirm' => __('Are you sure you want to delete # %s?', $users['User']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -70,12 +70,12 @@ $this->Html->css('base', null, array('inline' => false));
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acções'); ?></h3>
 	<ul>
-		<?php echo $this->Html->link(__('Nova Tarefa'), array('action' => 'add')); ?><br>
-		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add')); ?> <br>
-		<?php echo $this->Html->link(__('Listar Alocações'), array('controller' => 'alocations', 'action' => 'index')); ?> <br>
-		<?php echo $this->Html->link(__('Nova Alocação'), array('controller' => 'alocations', 'action' => 'add')); ?> 
+		<?php //echo $this->Html->link(__('Nova Tarefa'), array('action' => 'add'),array('class'=>'btn btn-default')); ?><br>
+		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
+		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add'),array('class'=>'btn btn-default')); ?> <br>
+		<?php echo $this->Html->link(__('Listar Alocações'), array('controller' => 'alocations', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
+		<?php echo $this->Html->link(__('Nova Alocação'), array('controller' => 'alocations', 'action' => 'add'),array('class'=>'btn btn-default')); ?> 
 	</ul>
 </div>

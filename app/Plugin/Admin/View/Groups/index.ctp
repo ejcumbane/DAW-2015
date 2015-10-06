@@ -31,10 +31,10 @@
 <div class="actions">
 	<h3><?php echo __('Acções'); ?></h3>
 	<ul>
-		<?php echo $this->Html->link(__('Novo Cargo'), array('action' => 'add'),array('class'=>'btn btn-default')); ?><br>
-		<?php echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
-		<?php echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add'),array('class'=>'btn btn-default')); ?><br> 
-        <?php echo $this->Html->link(__('Pesquisar Membro'), array('controller' => 'users', 'action' => 'membroscargo'),array('class'=>'btn btn-default')); ?> 
+		<?php echo $this->Html->link(__('Novo Cargo'), array('action' => 'add'),array('class'=>'btn btn-default')); ?><br> 			        <?php echo $this->Html->link(__('Pesquisar Membro'), array('controller' => 'users', 'action' => 'membroscargo'),array('class'=>'btn btn-default')); ?> 
 
+		<?php //echo $this->Html->link(__('Listar Membros'), array('controller' => 'users', 'action' => 'index'),array('class'=>'btn btn-default')); ?> <br>
+		<?php //echo $this->Html->link(__('Novo Membro'), array('controller' => 'users', 'action' => 'add'),array('class'=>'btn btn-default')); ?><br> 
+       
 	</ul>
 </div>
